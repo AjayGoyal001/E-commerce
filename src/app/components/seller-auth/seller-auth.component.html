@@ -1,0 +1,117 @@
+<div class="container">
+  <div class="card" *ngIf="!showLogin">
+    <div class="card_title">
+      <h1>Create Account</h1>
+      <span>Already have an account? <a (click)="openLogin()">Sign In</a></span>
+    </div>
+
+    <form
+      #sellerSignUp="ngForm"
+      (ngSubmit)="signUp(sellerSignUp.value)"
+      novalidate
+    >
+      <input
+        type="text"
+        ngModel
+        name="username"
+        placeholder="UserName"
+        required
+        #username="ngModel"
+      />
+      <div *ngIf="username.invalid && username.touched" class="error">
+        Username is required.
+      </div>
+      <input
+        type="email"
+        ngModel
+        name="email"
+        placeholder="Email"
+        required
+        email
+        #email="ngModel"
+      />
+      <div *ngIf="email.touched && email.invalid" class="error">
+        <span *ngIf="email.errors?.['required']">Email is required.</span>
+        <span *ngIf="email.errors?.['email']">Enter a valid email.</span>
+      </div>
+
+      <input
+        type="password"
+        ngModel
+        name="password"
+        placeholder="Password"
+        required
+        minlength="6"
+        #password="ngModel"
+      />
+
+      <div *ngIf="password.touched && password.invalid" class="error">
+        <span *ngIf="password.errors?.['required']" class="pass"
+          >Password is required.</span
+        >
+        <span *ngIf="password.errors?.['minlength']"
+          >Password must be at least 6 characters.</span
+        >
+      </div>
+      <button [disabled]="sellerSignUp.invalid">Sign Up</button>
+    </form>
+
+    <div class="card_terms">
+      <input type="checkbox" />
+      <span>I have read and agree to the <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+
+  <!--Login area-->
+  <div class="card" *ngIf="showLogin">
+    <div class="card_title">
+      <p>{{ authError }}</p>
+      <h1>Login</h1>
+      <span
+        >Don't have an account?
+        <a (click)="openLogin()">Create Account</a></span
+      >
+    </div>
+
+    <form
+      #sellerLogin="ngForm"
+      (ngSubmit)="login(sellerLogin.value)"
+      novalidate
+    >
+      <input
+        type="email"
+        ngModel
+        name="email"
+        placeholder="Email"
+        required
+        email
+        #email="ngModel"
+      />
+      <div *ngIf="email.touched && email.invalid" class="error">
+        <span *ngIf="email.errors?.['required']">Email is required.</span>
+        <span *ngIf="email.errors?.['email']">Enter a valid email.</span>
+      </div>
+
+      <input
+        type="password"
+        ngModel
+        name="password"
+        placeholder="Password"
+        required
+        #password="ngModel"
+      />
+
+      <div *ngIf="password.touched && password.invalid" class="error">
+        <span *ngIf="password.errors?.['required']" class="pass"
+          >Password is required.</span
+        >
+      </div>
+      <button [disabled]="sellerLogin.invalid">Login</button>
+    </form>
+
+    <div class="card_terms">
+      <input type="checkbox" />
+      <span>I have read and agree to the <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</div>

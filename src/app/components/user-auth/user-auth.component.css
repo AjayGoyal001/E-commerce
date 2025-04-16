@@ -1,0 +1,114 @@
+.user-auth {
+  max-width: 420px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #e0e0e0;
+}
+
+.user-auth h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.user-auth form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.user-auth span {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.95rem;
+}
+
+.user-auth input {
+  padding: 0.75rem;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fefefe;
+}
+
+.user-auth input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 4px rgba(25, 118, 210, 0.15);
+}
+
+.sign-button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.sign-button:hover {
+  background-color: #125ea2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
+
+.sign-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.card_title {
+  text-align: center;
+  padding: 10px;
+}
+
+.card_title p {
+  color: rgba(255, 0, 0, 0.805);
+  font-size: 15px;
+}
+
+.card_title h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.card_title a {
+  cursor: pointer;
+  color: #4796ff;
+  text-decoration: none;
+}
+
+small {
+  display: block;
+  font-size: 0.85rem;
+  color: #e74c3c; /* A nice red tone */
+  margin-top: 4px;
+  margin-left: 2px;
+  margin-bottom: -30px;
+}
+
+.specific span {
+  display: block;
+  font-size: 0.85rem;
+  color: #e74c3c; /* A nice red tone */
+  margin-top: -8px;
+  margin-left: 2px;
+  margin-bottom: 20px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

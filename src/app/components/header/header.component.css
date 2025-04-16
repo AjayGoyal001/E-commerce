@@ -1,0 +1,127 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid rgba(137, 43, 226, 0.3);
+}
+
+.nav h1 {
+  margin: 0;
+}
+
+.nav h1 a {
+  color: rgba(137, 43, 226, 0.9);
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav h1 a:hover {
+  color: rgb(110, 30, 190);
+}
+
+/* Navigation Links */
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  padding: 10px 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgba(137, 43, 226, 0.9);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: rgb(110, 30, 190);
+}
+
+/* Search Bar */
+.nav .nav-search {
+  display: flex;
+  flex: 1;
+  max-width: 400px;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav .nav-search input {
+  flex: 1;
+  padding: 9.5px 12px;
+  border: 1px solid rgba(137, 43, 226, 0.7);
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+.nav .nav-search button {
+  padding: 8px 15px;
+  background-color: rgba(137, 43, 226, 0.9);
+  color: #fff;
+  border: 1px solid rgba(137, 43, 226, 0.7);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav .nav-search button:hover {
+  background-color: rgb(110, 30, 190);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav .nav-search {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .nav li {
+    padding: 5px 0;
+  }
+}
+
+.name {
+  color: pink;
+}
+
+.suggested-result {
+  position: absolute;
+  display: list-item !important;
+  z-index: 10;
+  background-color: #fff;
+  width: 300px;
+  top: 54px;
+  border: 1px solid #ddd;
+}
+
+.suggested-result li {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.suggested-result li a {
+  cursor: pointer;
+  color: rgba(137, 43, 226, 0.7);
+}

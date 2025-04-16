@@ -1,0 +1,81 @@
+.my-orders {
+  padding: 40px 60px;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.my-orders h1 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.my-orders .row {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.my-orders .row:first-of-type {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+
+.my-orders .col-sm-2 {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+}
+
+.my-orders img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.order-id {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.price-tag {
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.status-badge {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 13px;
+  border: 1px solid #ffeeba;
+}
+
+.cancel-btn {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}

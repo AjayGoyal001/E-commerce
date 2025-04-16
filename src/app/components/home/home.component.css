@@ -1,0 +1,121 @@
+ngb-carousel {
+  width: 100%;
+  position: relative;
+  margin-top: 5%;
+}
+
+.picsum-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  border: 1px solid rgba(137, 43, 226, 0.3);
+  border-radius: 10px;
+}
+
+.picsum-img-wrapper img {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.carousel-caption {
+  background-color: rgba(137, 43, 226, 0.7);
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ngb-carousel .carousel-control-prev,
+ngb-carousel .carousel-control-next {
+  opacity: 1;
+  width: 5%;
+}
+
+ngb-carousel .carousel-control-prev-icon,
+ngb-carousel .carousel-control-next-icon {
+  background-color: rgba(137, 43, 226, 0.9);
+  border-radius: 50%;
+  padding: 10px;
+  background-size: 100%, 100%;
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    height: auto;
+    padding: 10px;
+  }
+
+  .picsum-img-wrapper {
+    height: 250px;
+  }
+
+  .carousel-caption {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+}
+
+/* Trendy Products */
+.product-list-wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.product-list-wrapper h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 25px;
+  text-decoration: underline;
+  color: rgb(0, 157, 255);
+}
+
+.product-item {
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  margin-right: 25px;
+}
+
+.product-item img {
+  width: 100%;
+  height: 300px;
+  padding: 15px 0px;
+  object-fit: contain;
+}
+
+.product-item .product-details {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-item .name-head {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product-details .detail {
+  margin-left: 37px;
+  display: flex;
+  gap: 20px;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.product-footer a {
+  text-decoration: none;
+}
